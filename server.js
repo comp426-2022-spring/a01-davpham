@@ -32,7 +32,7 @@ fs.readFile('./www/index.html', 'utf8', (err, data) => {
 const server = http.createServer((req, res) => {
     res.statuscode = 200
     res.setheader('Content-Type', 'text/html')
-    res.end('./www/index.html')
+    res.end('data')
 })
 
 // Start the `server` const listening on the port defined by argument in your `port` const. 
